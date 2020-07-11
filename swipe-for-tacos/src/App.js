@@ -1,5 +1,5 @@
 import React from 'react';
-import LocationInputPage from './components/location-input.component'
+import LocationInputPage from './components/location-input/location-input.component'
 import './App.css';
 
 function App() {
