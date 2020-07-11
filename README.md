@@ -1,3 +1,3 @@
 # VandyHacksSummer2020
 
-// this is Mario
+a website with a cool and catchy name
