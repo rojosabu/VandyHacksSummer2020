@@ -1,0 +1,13 @@
+#this function to find the sum of the arrays
+from array import *
+sumofarray=[0]*20
+
+def sum(x, arrayI, arrayII, arrayIII,arrayIV,arrayV,arrayVI,arrayVII,arrayVIII,arrayIX,arrayX):
+    sumofarray[x]=arrayI[x]+arrayII[x]+arrayIII[x]+arrayIV[x]+arrayV[x]+arrayVI[x]+arrayVII[x]+arrayVIII[x]+arrayIX[x]+arrayX[x]
+        
+def arraysum():
+    for x in range(20):
+        sumofarray.append(sum(x,arrayI,arrayII,arrayIII,arrayIV,arrayV,arrayVI,arrayVII,arrayVIII,arrayIX,arrayX))
+arraysum()
+for x in range(20):
+    print(sumofarray[x])
