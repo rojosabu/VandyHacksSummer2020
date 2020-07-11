@@ -1,5 +1,6 @@
 import React from 'react'
 import FormInput from "../form-input/form-input.component";
+import './location-input.styles.css';
 
 class LocationInputPage extends React.Component {
     constructor(props) {
@@ -8,15 +9,12 @@ class LocationInputPage extends React.Component {
             zip: '',
             lat: null,
             lng: null,
-            url: '',
-            location: '',
             type: 'restaurant',
             APIkey: 'AIzaSyALcnLOO6jrbkQD5JL7tlMjFfb4EmC4W24',
             keywords:'',
             guid: null,
             radius: 5000
         }
-
     }
 
 
@@ -28,6 +26,7 @@ class LocationInputPage extends React.Component {
                 //,()=>console.log(this.state.lat +','+ this.state.lng)
                 ,()=> this.fetchRestaurants()
                 ))
+            .catch(err => console.log(err))
     }
 
     fetchRestaurants = () => {
@@ -40,32 +39,34 @@ class LocationInputPage extends React.Component {
     }
 
     handleSubmit = (event) => {
+        
         event.preventDefault();
         this.convertToLatLng()
         
     }
 
     handlechange = ( event ) => {
+        //dynamically sets the state given an input
         const {name,value} = event.target
         this.setState({[name]: value})
     }
 
-
-
     render() {
         return(
-            <form onSubmit={this.handleSubmit}>
-                <h1>Find Restaurants</h1>
-                <FormInput 
-                    type="number" 
-                    name="zip" 
-                    onChange={this.handlechange} 
-                    required
-                    label="Zip Code" 
-                />
-                <button type='submit'> Submit </button>
-            </form>
-
+            <div className="location-form">
+                <form  onSubmit={this.handleSubmit}>
+                    <h1>Find Restaurants</h1>
+                    <FormInput 
+                        type="number" 
+                        name="zip" 
+                        onChange={this.handlechange} 
+                        required
+                        label="Zip Code" 
+                        style={{width: '100%'}}
+                    />
+                    <button className="submit-button" type='submit'> Submit </button>
+                </form>
+            </div>
 
         )
     }
