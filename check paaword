@@ -1,0 +1,10 @@
+function check(password) {
+	var pass= code;
+  var code = prompt("Please enter your passcode");
+	if (password=code){
+    	moveOn();
+        }
+    eles{
+    	check(pass);
+		}
+     }
