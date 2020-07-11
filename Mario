@@ -1,1 +1,24 @@
-//comment
+<!DOCTYPE html>
+<html>
+	<body>
+		<p id="demo"></p>
+		<script>
+			function check(demo){
+            	var password=promt("Enter the password for the groupt");
+                if (password=demo) {
+                	goAhead();
+				}
+            function goAhead(){
+            	<
+            
+           	var count= prompt("How many people are going out?);
+			//this is the number of the people for the project
+			var list=[];
+			//this is list we are using 
+            document.getElementById("demo").innerHTML =
+			Math.floor(Math.random() * 8999) + 1000;
+            check(demo);
+		</script>
+        
+    </body>
+</html>
