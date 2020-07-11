@@ -45,8 +45,8 @@ class LocationInputPage extends React.Component {
         
     }
 
-    handlechange = ( event ) => {
-        //dynamically sets the state given an input
+    handleChange = ( event ) => {
+        //dynamically sets the state given an changeEvent
         const {name,value} = event.target
         this.setState({[name]: value})
     }
@@ -59,7 +59,7 @@ class LocationInputPage extends React.Component {
                     <FormInput 
                         type="number" 
                         name="zip" 
-                        onChange={this.handlechange} 
+                        onChange={this.handleChange} 
                         required
                         label="Zip Code" 
                         style={{width: '100%'}}
