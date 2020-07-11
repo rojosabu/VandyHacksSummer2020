@@ -8,7 +8,7 @@ Front-End
 	
 
 Google Maps API
-	* Project Name VandyHacks. (id = 'vandyhacks-2020') API key = 'AIzaSyALcnLOO6jrbkQD5JL7tlMjFfb4EmC4W24'
+	* Project Name VandyHacks (id = 'vandyhacks-2020') API key = 'AIzaSyALcnLOO6jrbkQD5JL7tlMjFfb4EmC4W24'
 	* Documentation for place search found at https://developers.google.com/places/web-service/search
 	* Example Fetch https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=36.529770,-87.359451&radius=2000&type=restaurant&key=AIzaSyALcnLOO6jrbkQD5JL7tlMjFfb4EmC4W24
 	* Need list of nearest (Best?) resturants to ZIP Code(API uses latitude and longitude)
