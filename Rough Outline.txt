@@ -7,6 +7,8 @@ Front-End
 	* Waits until everyone has finshed voting to display the "winner"
 
 Google Maps API
+	* Project Name VandyHacks. (id = 'vandyhacks-2020') API key = 'AIzaSyALcnLOO6jrbkQD5JL7tlMjFfb4EmC4W24'
+	* Documentation for place search found at https://developers.google.com/places/web-service/search
 	* Need list of nearest (Best?) resturants to ZIP Code
 	* Get Names, ratings? Pictures?
 	* Send 20(?) or fewer resturants to back-end for processing
