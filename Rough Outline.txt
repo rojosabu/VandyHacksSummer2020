@@ -1,0 +1,26 @@
+Front-End
+	* Need button options to decide if starting new group or joining existing one
+		* Creating -- Generate group code, ask for ZIP
+			* Send ZIP code and group code to Database for linking and processing
+		* Joining -- Ask for group code, reject if invalid, link with host if valid
+	* When everyone has joined, host can "start the voting"
+	* Waits until everyone has finshed voting to display the "winner"
+
+Google Maps API
+	* Need list of nearest (Best?) resturants to ZIP Code
+	* Get Names, ratings? Pictures?
+	* Send 20(?) or fewer resturants to back-end for processing
+
+Database
+	* Store group code in database, store for ~20 min, use database to validify group codes
+	  sent by joining users
+	* Store ZIP of host user, to be sent and used by the group once voting starts
+	* Deletes both codes after some time (20-30 mins?) has passed since starting the vote,
+	  allowing that group code to be generated and used for new groups.
+
+Info Processing
+	* Compares rankings between each person
+		* Each person gets an object, each object will have a "ranking list" of some sort
+		* Update "ranking list" based on results of front-end voting
+	* Decide highest average rating? Highest total rating, basically
+	* Send "winning" resturant back to front-end to display
