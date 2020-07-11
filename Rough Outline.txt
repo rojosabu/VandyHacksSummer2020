@@ -12,6 +12,7 @@ Google Maps API
 	* Need list of nearest (Best?) resturants to ZIP Code
 	* Get Names, ratings? Pictures?
 	* Send 20(?) or fewer resturants to back-end for processing
+	* How to get the latitude and longitude from zip code
 
 Database
 	* Store group code in database, store for ~20 min, use database to validify group codes
